@@ -1,0 +1,123 @@
+@font-face {
+    font-family: outfit;
+    src: url(./fonts/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: outfit;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -265px;
+    /* Half of #content height */
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    width: 230px;
+    height: fit-content;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 5%;
+    padding: 20px;
+}
+
+#equilibrum-img {
+    height:auto;
+    width: 230px;
+    margin-bottom: 0%;
+    border-radius: 20px;
+}
+
+#title {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#title:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+#description {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0%;
+}
+
+
+.price-time {
+    width: 310px;
+    display: grid;
+    grid-template-columns: [first] 90px [second] 40px [third] 100px;
+  }
+  
+  #eth-price {
+    grid-area: first;
+    display: grid;
+    grid-template-columns: [eth] 12px [price] auto;
+  }
+  
+  #eth-icon {
+    grid-area: eth;
+    margin-top: 18px;
+  }
+  
+  #price {
+    grid-area: price;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    margin-left: 5px;
+  }
+  
+  #time-left {
+    grid-area: third;
+    display: grid;
+    grid-template-columns: [clock] 12px [time] auto;
+  }
+  
+  #clock-icon {
+    grid-area: clock;
+    margin-top: 18px;
+  }
+  
+  #time {
+    grid-area: time;
+    color: hsl(215, 51%, 70%);
+    margin-left: 10px;
+  }
+
+.creator-id {
+    display: grid;
+    grid-template-columns: [photo] 20px [name] auto;
+}
+
+#creator-pp {
+    height: 30px;
+    grid-area: photo;
+    margin-top: 10px;
+    border: white solid 1px;
+    border-radius: 50%;
+}
+
+#creator-name {
+    grid-area: name;
+    color: hsl(215, 51%, 70%);
+    margin-top: 18px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+span {
+    color: white;
+}
+
+span:hover {
+    color: hsl(178, 100%, 50%);
+}
